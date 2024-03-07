@@ -5,15 +5,24 @@
     <title>HTML 문서</title>
     <style>
         div {
+            width: 200px; height: 200px;
+            background-color: yellow;
+            position: relative;
+            border: 1px solid black;
+        }
+        .abs {
             width: 100px; height: 100px;
             background-color: red;
             position: relative;
-            top: 100px; left: 50px;
+            top: 0px
         }
     </style>
 </head>
 <body>
     <div></div>
-    <p>ppppppp</p>
+    <div>
+        <div class="abs"></div>
+        <p>ppppp</p>
+    </div>
 </body>
 </html>
