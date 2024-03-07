@@ -7,19 +7,17 @@
         .container {
             display: flex;
             width: 300px; height: 300px;
-            border: 2px solid black;
-            justify-content: space-between;
-            /* align-items: flex-start; */
-            /* align-items: flex-end; */
-            align-items: center;
+            border: 2px solid black;            
+            /* flex-wrap: nowrap; 기본상태 */
+            /* flex-wrap: wrap; */
+            flex-wrap: wrap-reverse; /* wrap 반대방향 */
         }
         .item {
-            width: 60px; height: 60px;
+            width: 120px; height: 60px;
             background-color: teal;
         }
         .self {
-            /* align-self: flex-start; */
-            align-self: flex-end;
+
         }
     </style>
 </head>
