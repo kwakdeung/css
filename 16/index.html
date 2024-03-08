@@ -5,20 +5,16 @@
     <title>HTML 문서</title>
     <style>
         /* hover active focus disabled nth-child() */
-        [type="button"] {
-            width: 100px; height: 30px;
-            background-color: tomato; color: white;
-            border: none; border-radius: 8px;
+        input:focus {
+            color: white;
+            background-color: red;
         }
-        [type="button"]:hover {
-            background-color: gray;
-        }
-        [type="button"]:active {
-            background-color: black;
+        input:disabled {
+            height: 100px;
         }
     </style>
 </head>
 <body>
-    <input type="button" value="버튼">
+    <input type="text" placeholder="아무거나 쓰기" disabled>
 </body>
 </html>
