@@ -5,16 +5,27 @@
     <title>HTML 문서</title>
     <style>
         /* hover active focus disabled nth-child() */
-        input:focus {
-            color: white;
-            background-color: red;
+        body {
+            display: flex;
+            justify-content: space-between;
         }
-        input:disabled {
-            height: 100px;
+        .box {
+            width: 50px; height: 50px;
+            background-color: blue; color: white;
+        }
+        /* .box:nth-child(3) {
+            background-color: red;
+        } */
+        .box:nth-child(2n - 1) {
+            background-color: red;
         }
     </style>
 </head>
 <body>
-    <input type="text" placeholder="아무거나 쓰기" disabled>
+    <div class="box">1번</div>
+    <div class="box">2번</div>
+    <div class="box">3번</div>
+    <div class="box">4번</div>
+    <div class="box">5번</div>
 </body>
 </html>
